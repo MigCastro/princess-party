@@ -1,13 +1,36 @@
 import React from 'react';
+import { FaFacebook, FaInstagram } from 'react-icons/fa'; // Importing icons
+import contactPhoto from '../assets/images/background/contact-bg.jpg'; // Importing the image
 
 const ContactPage = () => {
   return (
-    <section className="py-16 px-6 bg-gray-50">
-      <div className="max-w-7xl mx-auto text-center">
-        <h1 className="text-5xl font-bold text-pink-600 mb-10">Contact Us</h1>
-        <p className="text-gray-600 text-lg mb-6">We'd love to hear from you! Get in touch with us for inquiries, bookings, or feedback.</p>
-        <p className="text-gray-600 text-lg">Phone: (555) 123-4567</p>
-        <p className="text-gray-600 text-lg">Email: info@pixiedustprincesses.com</p>
+    <section className="py-16 px-12 bg-gray-50">
+      <div className="max-w-4xl mx-auto flex flex-col lg:flex-row items-center justify-between">
+        {/* Left Side: Contact Details */}
+        <div className="lg:w-1/2 mb-10 lg:mb-0 text-left">
+          <h1 className="text-5xl font-bold text-gray-800 mb-10" style={{ fontFamily: 'Montserrat, sans-serif' }}>Contact Us</h1>
+          <p className="text-xl text-gray-700 mb-2 font-semibold" style={{ fontFamily: 'Montserrat, sans-serif' }}>Pixie Dust Princesses</p>
+          <p className="text-lg text-gray-600 mb-6">pixiedustprincesses@gmail.com</p>
+
+          {/* Social Media Icons */}
+          <div className="flex space-x-6 mb-6">
+            <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 transition">
+              <FaFacebook size={36} />
+            </a>
+            <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" className="text-pink-600 hover:text-pink-800 transition">
+              <FaInstagram size={36} />
+            </a>
+          </div>
+
+          {/* Phone Number */}
+          <p className="text-xl font-semibold text-gray-700 mt-6">Phone Number</p>
+          <p className="text-lg text-gray-600">(555) 123-4567</p>
+        </div>
+
+        {/* Right Side: Example Image */}
+        <div className="lg:w-1/2 flex justify-center lg:justify-end">
+          <img src={contactPhoto} alt="Contact" className="rounded-md shadow-lg object-cover h-96 lg:h-auto lg:w-96" />
+        </div>
       </div>
     </section>
   );
