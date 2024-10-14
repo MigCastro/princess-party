@@ -31,12 +31,12 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center">
           {/* Logo and Company Name */}
-          <div className="flex items-center space-x-3">
-            <img className="h-16 w-16 rounded-full" src={logo} alt="Logo" />
-            <h1 className="text-xl font-semibold whitespace-nowrap" style={{ fontFamily: 'Montserrat, sans-serif', color: '#453b3a' }}>Pixie Dust Princesses</h1>
-          </div>
+                <NavLink to="/" className="flex items-center space-x-3">
+                <img className="h-16 w-16 rounded-full" src={logo} alt="Logo" />
+                <h1 className="text-xl font-semibold whitespace-nowrap" style={{ fontFamily: 'Montserrat, sans-serif', color: '#453b3a' }}>Pixie Dust Princesses</h1>
+                </NavLink>
 
-          {/* Navigation Links - Desktop View (shown when screen is larger than 450px) */}
+                {/* Navigation Links - Desktop View (shown when screen is larger than 450px) */}
           <div className="hidden custom-sm:flex items-center space-x-8">
             <NavLink to="/" activeClassName="font-bold text-pink-600">Home</NavLink>
             <NavLink to="/about" className="text-gray-800 hover:text-pink-600 transition">About</NavLink>
