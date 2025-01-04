@@ -14,7 +14,7 @@ const Footer = () => {
             <h3 className="text-2xl font-bold text-gray-800">Contact Us</h3>
             <p className="mt-4 text-gray-600">Have questions or need to get in touch?</p>
             <p className="mt-2 text-gray-600">
-              <FaPhoneAlt className="inline mr-2" /> (555) 123-4567
+              <FaPhoneAlt className="inline mr-2" /> (786) 361-5225
             </p>
             <p className="mt-2 text-gray-600">
               <FaEnvelope className="inline mr-2" /> info@pixiedustprincesses.com
@@ -26,7 +26,7 @@ const Footer = () => {
             <h3 className="text-2xl font-bold text-gray-800">Follow Us</h3>
             <div className="flex mt-6 space-x-6">
               <a
-                href="https://www.instagram.com/yourprofile"
+                href="https://www.instagram.com/pixiedust.princesses/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-800 hover:text-red-300 transition"
@@ -36,7 +36,7 @@ const Footer = () => {
               <a href="mailto:info@pixiedustprincesses.com" className="text-gray-800 hover:text-red-300 transition">
                 <FaEnvelope size={30} />
               </a>
-              <a href="tel:+15551234567" className="text-gray-800 hover:text-red-300 transition">
+              <a href="tel:+17863615225" className="text-gray-800 hover:text-red-300 transition">
                 <FaPhoneAlt size={30} />
               </a>
             </div>
