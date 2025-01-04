@@ -17,7 +17,7 @@ const ContactPage = () => {
             <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 transition">
               <FaFacebook size={36} />
             </a>
-            <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" className="text-pink-600 hover:text-pink-800 transition">
+            <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" className="text-primary hover:text-red-400 transition">
               <FaInstagram size={36} />
             </a>
           </div>

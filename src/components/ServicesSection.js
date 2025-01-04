@@ -29,7 +29,7 @@ const ServicesSection = () => {
             {/* Book Now Button */}
             <NavLink
               to="/book"
-              className="mt-6 bg-pink-600 text-white px-6 py-2 rounded-full font-bold hover:bg-pink-700 transition block text-center"
+              className="mt-6 bg-red-300 text-white px-6 py-2 rounded-full font-bold hover:bg-red-300 transition block text-center"
             >
               Book Now
             </NavLink>
@@ -49,7 +49,7 @@ const ServicesSection = () => {
             {/* Book Now Button */}
             <NavLink
               to="/book"
-              className="mt-6 bg-pink-600 text-white px-6 py-2 rounded-full font-bold hover:bg-pink-700 transition block text-center"
+              className="mt-6 bg-red-300 text-white px-6 py-2 rounded-full font-bold hover:bg-red-300 transition block text-center"
             >
               Book Now
             </NavLink>
@@ -69,7 +69,7 @@ const ServicesSection = () => {
             {/* Book Now Button */}
             <NavLink
               to="/book"
-              className="mt-6 bg-pink-600 text-white px-6 py-2 rounded-full font-bold hover:bg-pink-700 transition block text-center"
+              className="mt-6 bg-red-300 text-white px-6 py-2 rounded-full font-bold hover:bg-red-300 transition block text-center"
             >
               Book Now
             </NavLink>

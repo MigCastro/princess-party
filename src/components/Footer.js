@@ -29,14 +29,14 @@ const Footer = () => {
                 href="https://www.instagram.com/yourprofile"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-800 hover:text-pink-600 transition"
+                className="text-gray-800 hover:text-red-300 transition"
               >
                 <FaInstagram size={30} />
               </a>
-              <a href="mailto:info@pixiedustprincesses.com" className="text-gray-800 hover:text-pink-600 transition">
+              <a href="mailto:info@pixiedustprincesses.com" className="text-gray-800 hover:text-red-300 transition">
                 <FaEnvelope size={30} />
               </a>
-              <a href="tel:+15551234567" className="text-gray-800 hover:text-pink-600 transition">
+              <a href="tel:+15551234567" className="text-gray-800 hover:text-red-300 transition">
                 <FaPhoneAlt size={30} />
               </a>
             </div>

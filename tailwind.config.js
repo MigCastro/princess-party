@@ -7,7 +7,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: '#6D28D9', // For purple accents
+        primary: '#fcb2a7', // 
         secondary: '#D1D5DB', // Light gray
         dark: '#1F2937', // Dark gray for text
         light: '#F3F4F6', // Light gray for background

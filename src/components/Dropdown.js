@@ -9,7 +9,7 @@ const Dropdown = ({ title, items }) => {
       {/* Dropdown Button */}
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="flex items-center space-x-2 text-gray-800 hover:text-pink-600 transition duration-300 ease-in-out focus:outline-none"
+        className="flex items-center space-x-2 text-gray-800 hover:text-red-300 transition duration-300 ease-in-out focus:outline-none"
       >
         <span>{title}</span>
         <FaChevronDown className="text-sm" />
@@ -23,7 +23,7 @@ const Dropdown = ({ title, items }) => {
               <a
                 href={item.href}
                 key={index}
-                className="flex items-center px-4 py-2 text-gray-800 hover:bg-pink-500 hover:text-white transition-all duration-300 ease-in-out rounded-md"
+                className="flex items-center px-4 py-2 text-gray-800 hover:bg-red-300 hover:text-white transition-all duration-300 ease-in-out rounded-md"
               >
                 {item.icon && <span className="mr-3">{item.icon}</span>}
                 <span>{item.label}</span>

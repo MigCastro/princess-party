@@ -4,7 +4,7 @@ const FacePaintingPage = () => {
   return (
     <section className="py-16 px-6 bg-gray-50">
       <div className="max-w-7xl mx-auto text-center">
-        <h1 className="text-5xl font-bold text-pink-600 mb-10">Face Painting</h1>
+        <h1 className="text-5xl font-bold text-red-300 mb-10">Face Painting</h1>
         <p className="text-gray-600 text-lg leading-relaxed">
           Add a magical touch to your event with our professional face painting services. 
           We offer a wide range of designs to delight guests of all ages, ensuring a 

@@ -4,7 +4,7 @@ const EventsPage = () => {
   return (
     <section className="py-16 px-6 bg-white">
       <div className="max-w-7xl mx-auto text-center">
-        <h1 className="text-5xl font-bold text-pink-600 mb-10">Upcoming Events</h1>
+        <h1 className="text-5xl font-bold text-red-300 mb-10">Upcoming Events</h1>
         <p className="text-gray-600 text-lg leading-relaxed">
           Stay tuned for upcoming events where Pixie Dust Princesses will make magical appearances! 
           From community gatherings to special holiday events, our characters love making public appearances

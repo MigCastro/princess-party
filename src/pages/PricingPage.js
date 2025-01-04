@@ -20,19 +20,27 @@ const PricingPage = () => {
           <div className="relative bg-white p-12 rounded-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition duration-300 ease-in-out flex flex-col justify-between">
             <div>
               <div className="absolute top-0 left-0 bg-primary text-white px-4 py-2 rounded-br-lg rounded-tl-lg">Best Value</div>
-              <h3 className="text-4xl font-bold text-dark mb-4" style={{ fontFamily: 'Montserrat' }}>Pixie Hallow Party</h3>
-              <p className="text-secondary text-lg mb-4">Perfect for up to 15 kids</p>
+              <h3 className="text-4xl font-bold text-dark mb-4" style={{ fontFamily: 'Montserrat' }}>Pixie Hollow Party</h3>
+              <p className="text-primary text-lg mb-4">15 Kiddo Maximum</p>
               <p className="text-5xl font-bold text-primary mb-6">$145</p>
               <ul className="text-left space-y-2 text-dark">
-                <li><FaCheckCircle className="inline text-primary mr-2" /> Character of your choice</li>
-                <li><FaCheckCircle className="inline text-primary mr-2" /> Live performances and princess training</li>
-                <li><FaCheckCircle className="inline text-primary mr-2" /> Face painting, autographs, and photos</li>
-                <li><FaCheckCircle className="inline text-primary mr-2" /> Games and piñata assistance</li>
+                <li><FaCheckCircle className="inline text-primary mr-2" /> 60 min</li>
+                <li><FaCheckCircle className="inline text-primary mr-2" /> Character of Choice</li>
+                <li><FaCheckCircle className="inline text-primary mr-2" /> Live Performances</li>
+                <li><FaCheckCircle className="inline text-primary mr-2" /> Princess Training</li>
+                <li><FaCheckCircle className="inline text-primary mr-2" /> Face Paint</li>
+                <li><FaCheckCircle className="inline text-primary mr-2" /> Autographs</li>
+                <li><FaCheckCircle className="inline text-primary mr-2" /> Photo Opportunities</li>
+                <li><FaCheckCircle className="inline text-primary mr-2" /> Game Hosting</li>
+                <li><FaCheckCircle className="inline text-primary mr-2" /> Happy Birthday Song</li>
+                <li><FaCheckCircle className="inline text-primary mr-2" /> Piñata Assistance</li>
+                <li><FaCheckCircle className="inline text-primary mr-2" /> Music System Provided</li>
+
               </ul>
             </div>
             {/* Book Now Button */}
             <button
-              onClick={() => handleBookNow('Pixie Hallow Party')}
+              onClick={() => handleBookNow('Pixie Hollow Party')}
               className="mt-6 bg-primary text-white px-4 py-2 rounded-lg hover:bg-primary-dark transition"
               style={{ fontFamily: 'Montserrat' }}
             >
@@ -44,12 +52,20 @@ const PricingPage = () => {
           <div className="relative bg-white p-12 rounded-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition duration-300 ease-in-out flex flex-col justify-between">
             <div>
               <h3 className="text-4xl font-bold text-dark mb-4" style={{ fontFamily: 'Montserrat' }}>Pixie Perfect Party</h3>
-              <p className="text-secondary text-lg mb-4">Ideal for up to 20 kids</p>
+              <p className="text-primary text-lg mb-4">Recommended for parties with more than 15 kiddos</p>
               <p className="text-5xl font-bold text-primary mb-6">$185</p>
               <ul className="text-left space-y-2 text-dark">
-                <li><FaCheckCircle className="inline text-primary mr-2" /> Everything in the Pixie Hallow Party</li>
-                <li><FaCheckCircle className="inline text-primary mr-2" /> Expanded game hosting (2-3 games)</li>
-                <li><FaCheckCircle className="inline text-primary mr-2" /> More time for fun and laughter</li>
+              <li><FaCheckCircle className="inline text-primary mr-2" /> 60 min</li>
+                <li><FaCheckCircle className="inline text-primary mr-2" /> Character of Choice</li>
+                <li><FaCheckCircle className="inline text-primary mr-2" /> Live Performances</li>
+                <li><FaCheckCircle className="inline text-primary mr-2" /> Princess Training</li>
+                <li><FaCheckCircle className="inline text-primary mr-2" /> Face Paint</li>
+                <li><FaCheckCircle className="inline text-primary mr-2" /> Autographs</li>
+                <li><FaCheckCircle className="inline text-primary mr-2" /> Photo Opportunities</li>
+                <li><FaCheckCircle className="inline text-primary mr-2" /> Game Hosting</li>
+                <li><FaCheckCircle className="inline text-primary mr-2" /> Happy Birthday Song</li>
+                <li><FaCheckCircle className="inline text-primary mr-2" /> Piñata Assistance</li>
+                <li><FaCheckCircle className="inline text-primary mr-2" /> Music System Provided</li>
               </ul>
             </div>
             {/* Book Now Button */}

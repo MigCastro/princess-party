@@ -38,15 +38,15 @@ const Navbar = () => {
 
                 {/* Navigation Links - Desktop View (shown when screen is larger than 450px) */}
           <div className="hidden custom-sm:flex items-center space-x-8">
-            <NavLink to="/" activeClassName="font-bold text-pink-600">Home</NavLink>
-            <NavLink to="/about" className="text-gray-800 hover:text-pink-600 transition">About</NavLink>
-            <NavLink to="/characters" className="text-gray-800 hover:text-pink-600 transition">Characters</NavLink>
-            <NavLink to="/pricing" className="text-gray-800 hover:text-pink-600 transition">Pricing</NavLink>
-            <NavLink to="/contact" className="text-gray-800 hover:text-pink-600 transition">Contact</NavLink>
+            <NavLink to="/" activeClassName="font-bold text-red-300">Home</NavLink>
+            <NavLink to="/about" className="text-gray-800 hover:text-red-300 transition">About</NavLink>
+            <NavLink to="/characters" className="text-gray-800 hover:text-red-300 transition">Characters</NavLink>
+            <NavLink to="/pricing" className="text-gray-800 hover:text-red-300 transition">Pricing</NavLink>
+            <NavLink to="/contact" className="text-gray-800 hover:text-red-300 transition">Contact</NavLink>
             {/* Book Now Button */}
             <NavLink
               to="/book"
-              className="bg-pink-600 text-white px-4 py-2 rounded-full font-bold hover:bg-pink-700 transition whitespace-nowrap"
+              className="bg-primary text-white px-4 py-2 rounded-full font-bold hover:bg-red-300 transition whitespace-nowrap"
               style={{ fontFamily: 'Montserrat, sans-serif' }}
             >
               Book Now
@@ -68,36 +68,36 @@ const Navbar = () => {
           <div className="bg-white shadow-lg rounded-lg p-6 space-y-4">
             <NavLink
               to="/"
-              activeClassName="font-bold text-pink-600"
-              className="block text-lg text-gray-800 hover:text-pink-600 transition"
+              activeClassName="font-bold text-red-300"
+              className="block text-lg text-gray-800 hover:text-primary transition"
               onClick={toggleMenu}
             >
               Home
             </NavLink>
             <NavLink
               to="/about"
-              className="block text-lg text-gray-800 hover:text-pink-600 transition"
+              className="block text-lg text-gray-800 hover:text-primary transition"
               onClick={toggleMenu}
             >
               About
             </NavLink>
             <NavLink
               to="/characters"
-              className="block text-lg text-gray-800 hover:text-pink-600 transition"
+              className="block text-lg text-gray-800 hover:text-primary transition"
               onClick={toggleMenu}
             >
               Characters
             </NavLink>
             <NavLink
               to="/pricing"
-              className="block text-lg text-gray-800 hover:text-pink-600 transition"
+              className="block text-lg text-gray-800 hover:text-primary transition"
               onClick={toggleMenu}
             >
               Pricing
             </NavLink>
             <NavLink
               to="/contact"
-              className="block text-lg text-gray-800 hover:text-pink-600 transition"
+              className="block text-lg text-gray-800 hover:text-primary transition"
               onClick={toggleMenu}
             >
               Contact
@@ -106,7 +106,7 @@ const Navbar = () => {
             {/* More Dropdown - Mobile View */}
             <button
               onClick={toggleMoreMenu}
-              className="block text-lg text-gray-800 hover:text-pink-600 transition w-full text-left"
+              className="block text-lg text-gray-800 hover:text-primary transition w-full text-left"
             >
               More {moreMenuOpen ? <FaTimes className="inline ml-2" /> : <FaBars className="inline ml-2" />}
             </button>
@@ -116,7 +116,7 @@ const Navbar = () => {
                   <NavLink
                     key={index}
                     to={item.href}
-                    className="block text-gray-800 hover:text-pink-600 transition"
+                    className="block text-gray-800 hover:text-primary transition"
                     onClick={toggleMenu}
                   >
                     {item.label}
@@ -128,7 +128,7 @@ const Navbar = () => {
             {/* Book Now Button - Mobile View */}
             <NavLink
               to="/book"
-              className="bg-pink-600 text-white px-4 py-2 rounded-full font-bold hover:bg-pink-700 transition block text-center mt-4 whitespace-nowrap"
+              className="bg-primary text-white px-4 py-2 rounded-full font-bold hover:bg-red-300 transition block text-center mt-4 whitespace-nowrap"
               style={{ fontFamily: 'Montserrat, sans-serif' }}
               onClick={toggleMenu}
             >
