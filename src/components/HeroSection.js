@@ -29,7 +29,7 @@ const HeroSection = () => {
         </p>
         
         {/* Call to Action Button */}
-        <Button className="mt-6" style={{ backgroundColor: '#feb1c4', color: 'white', padding: '12px 24px', borderRadius: '9999px', boxShadow: '0 4px 6px rgba(0,0,0,0.1)' }}>
+        <Button to="/book" className="mt-6" style={{ backgroundColor: '#feb1c4', color: 'white', padding: '12px 24px', borderRadius: '9999px', boxShadow: '0 4px 6px rgba(0,0,0,0.1)' }}>
           Book Now
         </Button>
       </div>
