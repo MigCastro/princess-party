@@ -1,13 +1,15 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom'; // Import useNavigate to navigate to Book Now
-
+import rapunzelImg from '../assets/images/characters/Rapunzel.jpg';
+import arielImg from '../assets/images/characters/Ariel.jpg';
+import barbieImg from '../assets/images/characters/Barbie.jpg';
 const CharactersPage = () => {
   const navigate = useNavigate();
 
   const characters = [
-    { name: 'Rapunzel', img: 'https://via.placeholder.com/300' },
-    { name: 'Ariel', img: 'https://via.placeholder.com/300' },
-    { name: 'Barbie', img: 'https://via.placeholder.com/300' },
+    { name: 'Rapunzel', img: rapunzelImg },
+    { name: 'Ariel', img: arielImg },
+    { name: 'Barbie', img: barbieImg },
     { name: 'Tinker Bell', img: 'https://via.placeholder.com/300' },
     { name: 'Aurora', img: 'https://via.placeholder.com/300' },
     { name: 'Mavis', img: 'https://via.placeholder.com/300' },
@@ -35,6 +37,7 @@ const CharactersPage = () => {
                 src={character.img}
                 alt={character.name}
                 className="w-full h-64 object-cover rounded-t-lg mb-4"
+                style={{ objectPosition: 'top center' }}
               />
               <h3 className="text-2xl font-bold text-dark" style={{ fontFamily: 'Montserrat' }}>{character.name}</h3>
               <p className="text-secondary text-sm mt-2">A fan-favorite princess!</p>
