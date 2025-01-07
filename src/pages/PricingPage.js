@@ -21,17 +21,17 @@ const PricingPage = () => {
             <div>
               <div className="absolute top-0 left-0 bg-primary text-white px-4 py-2 rounded-br-lg rounded-tl-lg">Best Value</div>
               <h3 className="text-4xl font-bold text-dark mb-4" style={{ fontFamily: 'Montserrat' }}>Pixie Hollow Party</h3>
-              <p className="text-primary text-lg mb-4">15 Kiddo Maximum</p>
               <p className="text-5xl font-bold text-primary mb-6">$145</p>
               <ul className="text-left space-y-2 text-dark">
                 <li><FaCheckCircle className="inline text-primary mr-2" /> 60 min</li>
+                <li><FaCheckCircle className="inline text-primary mr-2" /> 15 Kiddo Maximum</li>
                 <li><FaCheckCircle className="inline text-primary mr-2" /> Character of Choice</li>
                 <li><FaCheckCircle className="inline text-primary mr-2" /> Live Performances</li>
                 <li><FaCheckCircle className="inline text-primary mr-2" /> Princess Training</li>
                 <li><FaCheckCircle className="inline text-primary mr-2" /> Face Paint</li>
                 <li><FaCheckCircle className="inline text-primary mr-2" /> Autographs</li>
                 <li><FaCheckCircle className="inline text-primary mr-2" /> Photo Opportunities</li>
-                <li><FaCheckCircle className="inline text-primary mr-2" /> Game Hosting</li>
+                <li><FaCheckCircle className="inline text-primary mr-2" /> Game Hosting (1 Game Max)</li>
                 <li><FaCheckCircle className="inline text-primary mr-2" /> Happy Birthday Song</li>
                 <li><FaCheckCircle className="inline text-primary mr-2" /> Piñata Assistance</li>
                 <li><FaCheckCircle className="inline text-primary mr-2" /> Music System Provided</li>
@@ -52,17 +52,17 @@ const PricingPage = () => {
           <div className="relative bg-white p-12 rounded-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition duration-300 ease-in-out flex flex-col justify-between">
             <div>
               <h3 className="text-4xl font-bold text-dark mb-4" style={{ fontFamily: 'Montserrat' }}>Pixie Perfect Party</h3>
-              <p className="text-primary text-lg mb-4">Recommended for parties with more than 15 kiddos</p>
               <p className="text-5xl font-bold text-primary mb-6">$185</p>
               <ul className="text-left space-y-2 text-dark">
-              <li><FaCheckCircle className="inline text-primary mr-2" /> 60 min</li>
+                <li><FaCheckCircle className="inline text-primary mr-2" /> 90 min</li>
+                <li><FaCheckCircle className="inline text-primary mr-2" /> 20 Kiddo Maximum</li>
                 <li><FaCheckCircle className="inline text-primary mr-2" /> Character of Choice</li>
                 <li><FaCheckCircle className="inline text-primary mr-2" /> Live Performances</li>
                 <li><FaCheckCircle className="inline text-primary mr-2" /> Princess Training</li>
                 <li><FaCheckCircle className="inline text-primary mr-2" /> Face Paint</li>
                 <li><FaCheckCircle className="inline text-primary mr-2" /> Autographs</li>
                 <li><FaCheckCircle className="inline text-primary mr-2" /> Photo Opportunities</li>
-                <li><FaCheckCircle className="inline text-primary mr-2" /> Game Hosting</li>
+                <li><FaCheckCircle className="inline text-primary mr-2" /> Game Hosting (2-3 Game Max)</li>
                 <li><FaCheckCircle className="inline text-primary mr-2" /> Happy Birthday Song</li>
                 <li><FaCheckCircle className="inline text-primary mr-2" /> Piñata Assistance</li>
                 <li><FaCheckCircle className="inline text-primary mr-2" /> Music System Provided</li>
