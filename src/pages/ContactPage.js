@@ -10,7 +10,7 @@ const ContactPage = () => {
         <div className="lg:w-1/2 mb-10 lg:mb-0 text-left">
           <h1 className="text-5xl font-bold text-gray-800 mb-10" style={{ fontFamily: 'Montserrat, sans-serif' }}>Contact Us</h1>
           <p className="text-xl text-gray-700 mb-2 font-semibold" style={{ fontFamily: 'Montserrat, sans-serif' }}>Pixie Dust Princesses</p>
-          <p className="text-lg text-gray-600 mb-6">pixiedustprincesses@gmail.com</p>
+          <p className="text-lg text-gray-600 mb-6">info@pixiedustprincesses.com</p>
 
           {/* Social Media Icons */}
           <div className="flex space-x-6 mb-6">
@@ -18,8 +18,9 @@ const ContactPage = () => {
               <FaFacebook size={36} />
             </a> */}
             <a href="https://www.instagram.com/pixiedust.princesses/" target="_blank" rel="noopener noreferrer" className="text-primary hover:text-red-400 transition">
-              <FaInstagram size={36} />
+              <FaInstagram size={36}/> 
             </a>
+            <p className="text-xl text-gray-700 mt-1">Instagram</p>
           </div>
 
           {/* Phone Number */}
