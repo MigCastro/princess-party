@@ -13,14 +13,16 @@ const ContactPage = () => {
           <p className="text-lg text-gray-600 mb-6">info@pixiedustprincesses.com</p>
 
           {/* Social Media Icons */}
-          <div className="flex space-x-6 mb-6">
+          <div className="flex space-x-3 mb-6">
             {/* <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 transition">
               <FaFacebook size={36} />
             </a> */}
             <a href="https://www.instagram.com/pixiedust.princesses/" target="_blank" rel="noopener noreferrer" className="text-primary hover:text-red-400 transition">
               <FaInstagram size={36}/> 
             </a>
-            <p className="text-xl text-gray-700 mt-1">Instagram</p>
+            <a href="https://www.instagram.com/pixiedust.princesses/" target="_blank" rel="noopener noreferrer">
+              <p className="text-xl text-gray-700 mt-1 hover:text-red-400 transition">@pixiedust.princesses</p>
+            </a>
           </div>
 
           {/* Phone Number */}
