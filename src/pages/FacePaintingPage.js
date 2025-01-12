@@ -1,25 +1,11 @@
-import React from "react";
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+import React from 'react';
+import Slider from 'react-slick';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 
-// Custom Left Arrow
-const CustomPrevArrow = (props) => {
-  const { className, style, onClick } = props;
-  return (
-    <div
-      className={className}
-      style={{
-        ...style,
-        display: "block",
-        background: "rgba(0, 0, 0, 0.5)",
-        borderRadius: "50%",
-        zIndex: 2,
-      }}
-      onClick={onClick}
-    />
-  );
-};
+// Dynamically import all images from the facepaint folder
+const importAll = (r) => r.keys().map((key, index) => ({ id: index + 1, src: r(key), alt: `Face Paint ${index + 1}` }));
+const facepaintImages = importAll(require.context('../assets/images/facepaint', false, /\.(png|jpe?g|svg)$/));
 
 // Custom Right Arrow
 const CustomNextArrow = (props) => {
@@ -39,16 +25,25 @@ const CustomNextArrow = (props) => {
   );
 };
 
-const FacePaintingPage = () => {
-  const images = [
-    { id: 1, src: "https://via.placeholder.com/400x300", alt: "Face Paint 1" },
-    { id: 2, src: "https://via.placeholder.com/400x300", alt: "Face Paint 2" },
-    { id: 3, src: "https://via.placeholder.com/400x300", alt: "Face Paint 3" },
-    { id: 4, src: "https://via.placeholder.com/400x300", alt: "Face Paint 4" },
-    { id: 5, src: "https://via.placeholder.com/400x300", alt: "Face Paint 5" },
-    { id: 6, src: "https://via.placeholder.com/400x300", alt: "Face Paint 6" },
-  ];
+// Custom Left Arrow
+const CustomPrevArrow = (props) => {
+  const { className, style, onClick } = props;
+  return (
+    <div
+      className={className}
+      style={{
+        ...style,
+        display: "block",
+        background: "rgba(0, 0, 0, 0.5)",
+        borderRadius: "50%",
+        zIndex: 2,
+      }}
+      onClick={onClick}
+    />
+  );
+};
 
+const FacePaintingPage = () => {
   const settings = {
     dots: true,
     infinite: true,
@@ -64,36 +59,34 @@ const FacePaintingPage = () => {
         breakpoint: 1024,
         settings: {
           slidesToShow: 2,
+          slidesToScroll: 1,
         },
       },
       {
-        breakpoint: 768,
+        breakpoint: 600,
         settings: {
           slidesToShow: 1,
+          slidesToScroll: 1,
         },
       },
     ],
   };
 
+  console.log(facepaintImages); // Log the imported images to verify paths
+
   return (
-    <section className="py-16 px-6 bg-gray-50">
+    <section className="py-16 px-6 bg-gray-100">
       <div className="max-w-7xl mx-auto text-center">
         <h1 className="text-5xl font-bold text-red-300 mb-10">Face Painting</h1>
-
-        {/* Carousel Section */}
-        <div className="mt-10 relative">
-          <Slider {...settings}>
-            {images.map((image) => (
-              <div key={image.id} className="px-2">
-                <img
-                  src={image.src}
-                  alt={image.alt}
-                  className="rounded-lg shadow-lg mx-auto w-full max-h-72 object-cover"
-                />
+        <Slider {...settings}>
+          {facepaintImages.map((image) => (
+            <div className='px-4 py-4'> 
+              <div key={image.id} className="rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 h-64">
+                <img src={image.src} alt={image.alt} className="w-full h-full object-cover" />
               </div>
-            ))}
-          </Slider>
-        </div>
+            </div>
+          ))}
+        </Slider>
       </div>
     </section>
   );
