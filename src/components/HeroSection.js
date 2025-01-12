@@ -1,13 +1,13 @@
 import React from 'react';
 import Button from './Button';
-import heroImage from '../assets/images/background/hero-bg.jpg'; // Hero background image
+import heroImage from '../assets/images/background/hero-bg.png'; // Hero background image
 import logo from '../assets/images/logo.png'; // Logo image
 
 const HeroSection = () => {
   return (
     <section
       className="relative h-screen bg-cover bg-center"
-      style={{ backgroundImage: `url(${heroImage})` }}
+      style={{ backgroundImage: `url(${heroImage})`, backgroundBlendMode: 'overlay', backgroundSize: 'cover', backgroundPosition: 'top' }}
     >
       {/* Darker Gradient Overlay */}
       <div className="absolute inset-0 bg-gradient-to-b from-black via-black to-transparent opacity-50"></div>
