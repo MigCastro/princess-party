@@ -228,7 +228,7 @@ const BookNowPage = () => {
 
           {/* Guest Count */}
           <div>
-            <label className="block text-gray-700" style={{ fontFamily: 'Montserrat' }}>How many kids (ages 3 and up) will be invited?</label>
+            <label className="block text-gray-700" style={{ fontFamily: 'Montserrat' }}>How many kids (ages 2 and up) will be invited?</label>
             <input
               type="number"
               name="guestCount"
