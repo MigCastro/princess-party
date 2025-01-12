@@ -19,7 +19,7 @@ const PricingPage = () => {
           {/* Pixie Hallow Package */}
           <div className="relative bg-white p-12 rounded-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition duration-300 ease-in-out flex flex-col justify-between">
             <div>
-              <div className="absolute top-0 left-0 bg-primary text-white px-4 py-2 rounded-br-lg rounded-tl-lg">Best Value</div>
+              {/* <div className="absolute top-0 left-0 bg-primary text-white px-4 py-2 rounded-br-lg rounded-tl-lg">Best Value</div> */}
               <h3 className="text-4xl font-bold text-dark mb-4" style={{ fontFamily: 'Montserrat' }}>Pixie Hollow Party</h3>
               <p className="text-5xl font-bold text-primary mb-6">$145</p>
               <ul className="text-left space-y-2 text-dark">
