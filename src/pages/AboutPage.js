@@ -1,5 +1,6 @@
 import React from 'react';
 import { FaMagic, FaSmile, FaDollarSign } from 'react-icons/fa'; // Icons for visual aid
+import MeetTheOwner from '../components/MeetTheOwner'; // Import the MeetTheOwner component
 
 const AboutPage = () => {
   return (
@@ -37,6 +38,9 @@ const AboutPage = () => {
           </div>
         </div>
       </div>
+      
+      {/* Meet the Owner Section */}
+      <MeetTheOwner />
     </section>
   );
 };
