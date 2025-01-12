@@ -1,12 +1,8 @@
 import React from 'react';
 
-// Using image URLs directly in the JSX
-const galleryImages = [
-  'https://via.placeholder.com/300', 
-  'https://via.placeholder.com/300', 
-  'https://via.placeholder.com/300',
-  'https://via.placeholder.com/300',
-]; // Replace with actual image paths later
+// Dynamically import all images from the gallery folder
+const importAll = (r) => r.keys().map((key) => r(key));
+const galleryImages = importAll(require.context('../assets/images/gallery', false, /\.(png|jpe?g|svg)$/));
 
 const GalleryPage = () => {
   return (
@@ -15,7 +11,7 @@ const GalleryPage = () => {
         <h1 className="text-5xl font-bold text-red-300 mb-10">Gallery</h1>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {galleryImages.map((image, index) => (
-            <div key={index} className="rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300">
+            <div key={index} className="rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 h-64">
               <img src={image} alt={`Gallery Image ${index + 1}`} className="w-full h-full object-cover" />
             </div>
           ))}
