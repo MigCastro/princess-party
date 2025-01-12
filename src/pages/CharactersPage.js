@@ -1,20 +1,25 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom'; // Import useNavigate to navigate to Book Now
-import rapunzelImg from '../assets/images/characters/Rapunzel.jpg';
+import auroraImg from '../assets/images/characters/Aurora.jpg';
 import arielImg from '../assets/images/characters/Ariel.jpg';
 import barbieImg from '../assets/images/characters/Barbie.jpg';
+import miraculousImg from '../assets/images/characters/Miraculous.jpeg';
+import spider_gwenImg from '../assets/images/characters/SpiderGwen.jpeg';
+import tinkerBellImg from '../assets/images/characters/TinkerBell.jpg';
+
 const CharactersPage = () => {
   const navigate = useNavigate();
 
   const characters = [
-    { name: 'Rapunzel', img: rapunzelImg },
+    { name: 'Rapunzel', img: 'https://via.placeholder.com/300' },
     { name: 'Ariel', img: arielImg },
     { name: 'Barbie', img: barbieImg },
-    { name: 'Tinker Bell', img: 'https://via.placeholder.com/300' },
-    { name: 'Aurora', img: 'https://via.placeholder.com/300' },
+    { name: 'Tinker Bell', img: tinkerBellImg },
+    { name: 'Aurora', img: auroraImg },
     { name: 'Mavis', img: 'https://via.placeholder.com/300' },
     { name: 'Elsa', img: 'https://via.placeholder.com/300' },
-    { name: 'Spider Gwen', img: 'https://via.placeholder.com/300' },
+    { name: 'Spider Gwen', img: spider_gwenImg },
+    { name: 'Ladybug', img: miraculousImg },
   ];
 
   const handleBookNow = (characterName) => {
