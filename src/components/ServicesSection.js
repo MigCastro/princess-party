@@ -8,7 +8,7 @@ const ServicesSection = () => {
   return (
     <section className="relative pt-20 pb-40" style={{ background: 'linear-gradient(to left, #ffb1c4, #ffa3a6)' }}>
       {/* Diagonal divider at the bottom */}
-      <div className="absolute inset-x-0 bottom-0 h-20 bg-white" style={{ clipPath: 'polygon(100% 0%, 0% 100%, 100% 100%)' }}></div>
+      <div className="absolute inset-x-0 -bottom-1 h-20 bg-white" style={{ clipPath: 'polygon(100% 0%, 0% 95%, 100% 100%)' }}></div>
 
       {/* Service Content */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-8">
