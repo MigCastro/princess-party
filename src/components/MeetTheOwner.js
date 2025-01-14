@@ -9,7 +9,7 @@ const MeetTheOwner = () => {
   };
 
   return (
-    <section className="py-16 px-20 bg-light mt-32">
+    <section className="py-16 px-8 bg-light mt-32">
       <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center md:items-start space-y-8 md:space-y-0 md:space-x-0 lg:space-x-0">
         <div className="md:w-1/2 text-center md:text-left">
           <h2 className="text-4xl font-bold text-dark mb-4" style={{ fontFamily: 'Montserrat' }}>Meet the Owner</h2>
@@ -25,7 +25,7 @@ const MeetTheOwner = () => {
             Want to know even more about me?
           </button>
           <div
-            className={`mt-4 text-dark text-lg leading-relaxed transition-all duration-500 ease-in-out ${showMore ? 'max-h-screen opacity-100' : 'max-h-0 opacity-0 overflow-hidden'}`}
+            className={`mt-2 text-dark text-lg leading-relaxed transition-all duration-500 ease-in-out ${showMore ? 'max-h-screen opacity-100' : 'max-h-0 opacity-0 overflow-hidden'}`}
             style={{ fontFamily: 'Montserrat' }}
           >
             <p>
