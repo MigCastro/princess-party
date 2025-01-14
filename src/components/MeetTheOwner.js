@@ -10,12 +10,18 @@ const MeetTheOwner = () => {
 
   return (
     <section className="py-16 px-8 bg-light mt-32">
-      <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center md:items-start space-y-8 md:space-y-0 md:space-x-0 lg:space-x-0">
+      <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center space-y-8 md:space-y-0 md:space-x-0 lg:space-x-0 justify-center">
         <div className="md:w-1/2 text-center md:text-left">
           <h2 className="text-4xl font-bold text-dark mb-4" style={{ fontFamily: 'Montserrat' }}>Meet the Owner</h2>
           <h3 className="text-2xl font-bold text-dark mb-4" style={{ fontFamily: 'Montserrat' }}>Hi, I'm Isabella</h3>
           <p className="text-dark text-lg leading-relaxed mb-4" style={{ fontFamily: 'Montserrat' }}>
-            I'm the founder of [Company Name]. With a passion for creating magical experiences, I started this company to bring joy and unforgettable memories to children and their families. Our mission is to make every event special and enchanting.
+          I’m Isabella, and I’ve had the joy of being a princess performer since 2021. There’s nothing quite like seeing a child’s face light up when they meet their favorite character, it’s a kind of magic that truly warms my heart. My love for creating these magical moments led me to start my own business, Pixie Dust Princesses, where I get to make dreams come true weekly!
+          </p>
+          <p className="text-dark text-lg leading-relaxed mb-4" style={{ fontFamily: 'Montserrat' }}>
+          I’ve always had a passion for creativity and storytelling, which is why I studied fashion design and later pursued fashion marketing and merchandising. My background helps me add an extra magical touch to the styling of each of my characters!
+          </p>
+          <p className="text-dark text-lg leading-relaxed mb-4" style={{ fontFamily: 'Montserrat' }}>
+          If you’re ready to bring a little magic to your next event, I’d love to help make it unforgettable. Book now, and let’s create some magical memories together!
           </p>
           <button
             onClick={toggleShowMore}
