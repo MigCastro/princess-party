@@ -101,7 +101,7 @@ const EventsPage = () => {
         ) : (
           <p className="text-dark text-lg">No upcoming events.</p>
         )}
-        <h2 className="text-4xl font-bold text-primary mt-12 mb-6 text-left" style={{ fontFamily: 'Montserrat' }}>Previous Events</h2>
+        <h2 className="text-4xl font-bold text-primary mt-12 mb-6 md:text-left text-center" style={{ fontFamily: 'Montserrat' }}>Previous Events</h2>
         {previousEvents.length > 0 ? (
           previousEvents.map((event, index) => (
             <EventCard
