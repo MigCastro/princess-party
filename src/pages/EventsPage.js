@@ -87,7 +87,7 @@ const EventsPage = () => {
     <section className="py-16 px-12 bg-white">
       <h1 className="text-5xl font-bold text-dark mb-10 text-center" style={{ fontFamily: 'Montserrat' }}>Events</h1>
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-4xl font-bold text-primary mb-6 text-left" style={{ fontFamily: 'Montserrat' }}>Upcoming Events</h2>
+        <h2 className="text-4xl font-bold text-primary mb-6 md:text-left text-center" style={{ fontFamily: 'Montserrat' }}>Upcoming Events</h2>
         {upcomingEvents.length > 0 ? (
           upcomingEvents.map((event, index) => (
             <EventCard
