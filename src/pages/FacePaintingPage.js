@@ -16,9 +16,9 @@ const CustomNextArrow = (props) => {
       style={{
         ...style,
         display: "block",
-        background: "rgba(0, 0, 0, 0.5)",
         borderRadius: "50%",
         zIndex: 2,
+        background: "#fca5a5",
       }}
       onClick={onClick}
     />
@@ -34,7 +34,7 @@ const CustomPrevArrow = (props) => {
       style={{
         ...style,
         display: "block",
-        background: "rgba(0, 0, 0, 0.5)",
+        background: "#fca5a5",
         borderRadius: "50%",
         zIndex: 2,
       }}
@@ -76,12 +76,22 @@ const FacePaintingPage = () => {
 
   return (
     <section className="py-16 px-6 bg-gray-100">
+      <style>
+        {`
+          @media (max-width: 600px) {
+            .slick-prev,
+            .slick-next {
+              display: none !important;
+            }
+          }
+        `}
+      </style>
       <div className="max-w-7xl mx-auto text-center">
         <h1 className="text-5xl font-bold text-red-300 mb-10">Face Painting</h1>
         <Slider {...settings}>
           {facepaintImages.map((image) => (
-            <div className='px-4 py-4'> 
-              <div key={image.id} className="rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 h-64">
+            <div className='px-6 py-14'> 
+              <div key={image.id} className="rounded-xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 h-64">
                 <img src={image.src} alt={image.alt} className="w-full h-full object-cover" />
               </div>
             </div>
