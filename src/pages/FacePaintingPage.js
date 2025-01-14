@@ -87,7 +87,7 @@ const FacePaintingPage = () => {
         `}
       </style>
       <div className="max-w-7xl mx-auto text-center">
-        <h1 className="text-5xl font-bold text-red-300 mb-10">Face Painting</h1>
+      <h1 className="text-5xl font-bold text-dark mb-10" style={{ fontFamily: 'Montserrat' }}>Face Painting</h1>
         <Slider {...settings}>
           {facepaintImages.map((image) => (
             <div className='px-6 py-14'> 
