@@ -1,7 +1,7 @@
 import React from 'react';
 import characters from '../assets/images/services/characters.jpg';
 import facePainting from '../assets/images/services/face-painting.jpg';
-import events from '../assets/images/services/events.jpg';
+import events from '../assets/images/services/events.png';
 import { NavLink } from 'react-router-dom'; // To link to the Book Now page
 
 const ServicesSection = () => {
