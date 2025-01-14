@@ -12,7 +12,7 @@ const GalleryPage = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {galleryImages.map((image, index) => (
             <div key={index} className="rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 h-64">
-              <img src={image} alt={`Gallery Image ${index + 1}`} className="w-full h-full object-cover" />
+              <img src={image} alt={`Gallery${index + 1}`} className="w-full h-full object-cover" />
             </div>
           ))}
         </div>

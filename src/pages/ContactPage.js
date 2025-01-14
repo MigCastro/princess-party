@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaFacebook, FaInstagram } from 'react-icons/fa'; // Importing icons
+import { FaInstagram } from 'react-icons/fa'; // Importing icons
 import contactPhoto from '../assets/images/background/contact-bg.jpg'; // Importing the image
 
 const ContactPage = () => {
