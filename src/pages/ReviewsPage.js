@@ -11,7 +11,7 @@ const ReviewsPage = () => {
   return (
     <section className="py-16 px-6 bg-gray-50">
       <div className="max-w-7xl mx-auto text-center">
-            <h1 className="text-5xl font-bold text-dark mb-10" style={{ fontFamily: 'Montserrat' }}>About Us</h1>
+            <h1 className="text-5xl font-bold text-dark mb-10" style={{ fontFamily: 'Montserrat' }}>Customer Reviews</h1>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
           {reviews.map((review, index) => (
             <ReviewCard
