@@ -81,7 +81,7 @@ const EventsPage = () => {
   const currentDate = new Date();
 
   const upcomingEvents = events.filter(event => new Date(event.date) >= currentDate);
-  const previousEvents = events.filter(event => new Date(event.date) < currentDate);
+  const previousEvents = events.filter(event => new Date(event.date) < currentDate).sort((a, b) => new Date(b.date) - new Date(a.date));
 
   return (
     <section className="py-16 px-12 bg-white">
