@@ -44,7 +44,7 @@ const Footer = () => {
 
           {/* Copyright */}
           <div className="flex items-center justify-center md:justify-end">
-            <p className="text-gray-600">&copy; 2024 Pixie Dust Princesses - All Rights Reserved</p>
+            <p className="text-gray-600">&copy; 2025 Pixie Dust Princesses - All Rights Reserved</p>
           </div>
         </div>
 
