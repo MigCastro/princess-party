@@ -8,7 +8,7 @@ const EventCard = ({ title, date, logo, description }) => {
   };
 
   return (
-    <div className="py-8 px-16 border-b">
+    <div className="py-8 px-4 border-b">
       <div className="max-w-5xl mx-auto flex flex-col md:flex-row justify-between items-center">
         <div className="text-center md:text-left md:flex-1">
           <h2 className="text-3xl font-bold text-dark mb-2 md:pr-24">{title}</h2>
@@ -26,7 +26,7 @@ const EventCard = ({ title, date, logo, description }) => {
           )}
         </div>
         <div className="flex-shrink-0 md:ml-8">
-          <img src={logo} alt="Organization Logo" className="w-60 h-60 object-contain mb-4 md:mb-0" />
+          <img src={logo} alt="Organization Logo" className="w-60 h-60 object-contain my-4 md:mb-0" />
         </div>
       </div>
     </div>
