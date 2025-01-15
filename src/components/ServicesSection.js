@@ -6,7 +6,7 @@ import { NavLink } from 'react-router-dom'; // To link to the Book Now page
 
 const ServicesSection = () => {
   return (
-    <section className="relative pt-20 pb-40" style={{ background: 'linear-gradient(to left, #ffb1c4, #ffa3a6)' }}>
+    <section className="relative pt-20 pb-40" style={{ background: 'linear-gradient(to left, #fcb2a7 , #ffa3a6)' }}>
       {/* Diagonal divider at the bottom */}
       <div className="absolute inset-x-0 -bottom-1 h-20 bg-white" style={{ clipPath: 'polygon(100% 0%, 0% 95%, 100% 100%)' }}></div>
 

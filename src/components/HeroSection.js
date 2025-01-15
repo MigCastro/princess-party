@@ -35,7 +35,7 @@ const HeroSection = () => {
       </div>
 
       {/* Inverted Diagonal Divider */}
-      <div className="absolute inset-x-0 bottom-0 h-16" style={{ background: 'linear-gradient(to left, #ffb1c4, #ffa3a6)', clipPath: 'polygon(0% 0%, 100% 100%, 0% 100%)' }}></div>
+      <div className="absolute inset-x-0 bottom-0 h-16" style={{ background: 'linear-gradient(to left, #fcb2a7, #ffa3a6)', clipPath: 'polygon(0% 0%, 100% 100%, 0% 100%)' }}></div>
     </section>
   );
 };
